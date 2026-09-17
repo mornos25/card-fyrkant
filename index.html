@@ -6,30 +6,45 @@
   <title>Morteza Nosrati | FYRKANT Field Support</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --card-bg: #1e293b;
+      --bg: #0b1329;
+      --card-bg: #152238;
       --text: #f8fafc;
       --text-muted: #94a3b8;
       --accent: #0d9488;
       --accent-hover: #0f766e;
-      --border: #334155;
-      --btn-bg: #273549;
+      --border: #233554;
+      --btn-bg: #1c2e4a;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     body { background-color: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-    .card { background: var(--card-bg); width: 100%; max-width: 390px; border-radius: 18px; border: 1px solid var(--border); padding: 28px 22px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
-    .avatar { width: 84px; height: 84px; border-radius: 50%; background: #334155; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 700; color: #fff; border: 2px solid var(--accent); }
+    .card { background: var(--card-bg); width: 100%; max-width: 390px; border-radius: 18px; border: 1px solid var(--border); padding: 28px 22px; text-align: center; box-shadow: 0 12px 30px rgba(0,0,0,0.4); }
+    
+    .avatar-img { 
+      width: 90px; 
+      height: 90px; 
+      border-radius: 50%; 
+      object-fit: cover; 
+      margin: 0 auto 16px; 
+      display: block; 
+      border: 2.5px solid var(--accent); 
+      box-shadow: 0 4px 14px rgba(13, 148, 136, 0.25);
+    }
+
     h1 { font-size: 1.35rem; font-weight: 700; margin-bottom: 4px; }
     .title { color: var(--accent); font-size: 0.9rem; font-weight: 600; margin-bottom: 2px; }
-    .company { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 18px; }
-    .location { display: inline-flex; align-items: center; gap: 5px; font-size: 0.78rem; background: #0f172a; padding: 4px 10px; border-radius: 999px; color: var(--text-muted); margin-bottom: 22px; border: 1px solid var(--border); }
+    .company { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px; }
+    .location { display: inline-flex; align-items: center; gap: 5px; font-size: 0.78rem; background: #0b1329; padding: 5px 12px; border-radius: 999px; color: var(--text-muted); margin-bottom: 22px; border: 1px solid var(--border); }
     
-    .actions { display: flex; flex-direction: column; gap: 10px; }
-    .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border-radius: 10px; text-decoration: none; font-size: 0.92rem; font-weight: 600; transition: background 0.2s; border: none; cursor: pointer; }
-    .btn-primary { background: var(--accent); color: #ffffff; }
+    .actions { display: flex; flex-direction: column; gap: 11px; }
+    .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 13px; border-radius: 10px; text-decoration: none; font-size: 0.92rem; font-weight: 600; transition: background 0.2s; border: none; cursor: pointer; }
+    
+    /* دکمه اصلی و چشمگیر برای ذخیره مخاطب */
+    .btn-primary { background: var(--accent); color: #ffffff; font-size: 0.96rem; }
     .btn-primary:hover { background: var(--accent-hover); }
+    
     .btn-secondary { background: var(--btn-bg); color: var(--text); border: 1px solid var(--border); }
-    .btn-secondary:hover { background: #334155; }
+    .btn-secondary:hover { background: #233a5e; }
+    
     .btn-website { background: #1a365d; color: #ffffff; border: 1px solid #2b4c7e; }
     .btn-website:hover { background: #234775; }
 
@@ -40,31 +55,30 @@
 <body>
 
   <div class="card">
-    <div class="avatar">MN</div>
+    <!-- تصویر پروفایل -->
+    <img src="profile.jpg" alt="Morteza Nosrati" class="avatar-img">
+    
     <h1>Morteza Nosrati</h1>
     <div class="title">IT Field Engineer & Founder</div>
     <div class="company">FYRKANT IT & Infrastructure</div>
     <div class="location">📍 Gothenburg & Västra Götaland</div>
 
     <div class="actions">
-      <!-- دکمه سایت اصلی شرکت -->
-      <a href="https://fyrkanttech.se" class="btn btn-website" target="_blank">🌐 Official Website</a>
+      <!-- مهم‌ترین اقدام: ذخیره مستقیم کانتکت در تلفن -->
+      <a href="contact.vcf" class="btn btn-primary" download>📇 Spara kontakt / Save Contact</a>
       
-      <!-- ذخیره مستقیم کانتکت -->
-      <a href="contact.vcf" class="btn btn-primary" download>📇 Save Contact to Phone</a>
+      <!-- معرفی شفاف خدمات عملیاتی شرکت -->
+      <a href="fyrkant-capabilities.pdf" class="btn btn-secondary" download>📄 Tjänster & Field Support (PDF)</a>
+
+      <!-- وب‌سایت اصلی شرکتی -->
+      <a href="https://fyrkanttech.se" class="btn btn-website" target="_blank">🌐 fyrkanttech.se</a>
       
-      <!-- تماس مستقیم -->
-      <a href="tel:+46762264919" class="btn btn-secondary">📞 Call +46 76 226 49 19</a>
-      
-      <!-- ایمیل -->
-      <a href="mailto:MortezaNosrati@fyrkanttech.se" class="btn btn-secondary">✉️ Send Email</a>
-      
-      <!-- دانلود مستند توانمندی‌ها -->
-      <a href="fyrkant-capabilities.pdf" class="btn btn-secondary" download>📄 Capabilities One-Pager (PDF)</a>
+      <!-- ارسال مستقیم ایمیل رسمی -->
+      <a href="mailto:MortezaNosrati@fyrkanttech.se" class="btn btn-secondary">✉️ Skicka e-post / Send Email</a>
     </div>
 
     <div class="divider"></div>
-    <div class="footer-note">Smart Hands • Rack & Stack • Field Dispatch</div>
+    <div class="footer-note">Smart Hands • Rack & Stack • Nätverksteknik</div>
   </div>
 
 </body>
