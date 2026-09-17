@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Nosrati;Morteza;;;
+FN:Morteza Nosrati
+ORG:FYRKANT IT & Infrastructure
+TITLE:Founder & IT Infrastructure Field Engineer
+TEL;TYPE=CELL,VOICE;VALUE=uri:tel:+46762264919
+EMAIL;TYPE=INTERNET,WORK,PREF:MortezaNosrati@fyrkanttech.se
+URL;TYPE=WORK:https://www.linkedin.com/company/fyrkant-tech/
+URL;TYPE=PERSONAL:https://www.linkedin.com/in/morteza-nosrati-304420b4/
+ADR;TYPE=WORK,POSTAL,PARCEL:;;Gothenburg;Västra Götaland;;;Sweden
+NOTE:On-Site IT Infrastructure, Smart Hands & Field Support Services in Gothenburg & Västra Götaland.
+END:VCARD
